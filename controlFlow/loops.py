@@ -33,3 +33,17 @@ for x in "Python":
 # Lists are also iterable
 for x in [1, 2, 3, 4]:
     print(x)
+
+# while loop
+number = 100
+while number > 0:
+    number //= 2
+    print(number)
+
+# Excersice
+count = 0
+for i in range(1, 10):
+    if i % 2 == 0:
+        print(i)
+        count += 1
+print(f" We have {count} even numbers")
