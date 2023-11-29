@@ -14,3 +14,11 @@ print(round(2.9))  # rounds to the nearest integer
 print(abs(-2.9))  # prints absolute value of number
 
 print(math.ceil(2.2))  # prints the next integer
+
+# input() always accepts a string --> we need to typecast to get desired input
+x = int(input("x: "))
+print(type(x))
+y = x + 1
+print(f"x : {x}, y: {y}")
+
+bool(0)  # gives false, anything else is true
