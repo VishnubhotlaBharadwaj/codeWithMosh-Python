@@ -25,3 +25,9 @@ first, second, third = numbers
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 # prints first, pack all other into seperate list, prints last
 first, *other, last = numbers
+
+# loopimg over lists
+# enumerate objects returns a tuples
+letters = ["a", "b", "c"]
+for index, letter in enumerate(letters):
+    print(index, letter)
