@@ -39,3 +39,14 @@ def multiply(*numbers):
 
 
 multiply(2, 3, 4, 5)
+
+# xxargs
+
+
+def save_user(**user):
+    print(user)
+
+
+save_user(id=1, user="John", age=22)
+
+# scope of the variable --> 1. local, 2. global
