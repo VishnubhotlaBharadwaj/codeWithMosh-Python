@@ -31,3 +31,8 @@ first, *other, last = numbers
 letters = ["a", "b", "c"]
 for index, letter in enumerate(letters):
     print(index, letter)
+
+# lists can be sorted using list.sort()
+# sorted in reverse using list.sort(reverse = True)
+# sorted(list) --> creates a new sorted list without modifying the original list
+# sort() dont take any possitional arguments, it takes only keyword arguments
