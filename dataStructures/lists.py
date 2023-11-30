@@ -36,3 +36,27 @@ for index, letter in enumerate(letters):
 # sorted in reverse using list.sort(reverse = True)
 # sorted(list) --> creates a new sorted list without modifying the original list
 # sort() dont take any possitional arguments, it takes only keyword arguments
+
+# Map function is used to transform a list into a different list
+items = [
+    ("p1", 10),
+    ("p2", 9),
+    ("p3", 12),
+]
+
+prices = list(map(lambda item: item[1], items))
+
+# filter function
+filtered = list(filter(lambda item: item[1] >= 10, items))
+
+# list comprehensions for line 47
+prices = [item[1] for item in items]
+
+# list comprehensions for line 50
+filtered = [item for item in items if item[1] >= 10]
+
+# Zip function --> combining multiple lists
+list1 = [1, 2, 3]
+list2 = [10, 20, 30]
+
+print(list(zip(list1, list2)))
