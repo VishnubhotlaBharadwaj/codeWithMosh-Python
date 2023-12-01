@@ -4,8 +4,10 @@
 # Class: Human
 # Objects: John, Mary, jack etc..
 # classes uses PascalNamingConvention
-
+# Objects in python are dynamic, we dont have to define all of them in the constructor
 class Point:
+    # class level attribute,  can be accessed by all the objects of the class
+    default_class = "blue"
 
     def __init__(self, x, y):  # constructor; self is the reference for current object
         self.x = x
@@ -17,7 +19,6 @@ class Point:
 
 point = Point(1, 2)
 point.draw()
-print(type(point))
-print(isinstance(point, Point))
-print(point.x)
-print(point.y)
+
+print(Point.default_class)
+print(point.default_class)
